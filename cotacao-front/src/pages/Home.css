@@ -1,0 +1,24 @@
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .ads-space {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #e9ecef;
+    border: 1px dashed #ccc;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }  

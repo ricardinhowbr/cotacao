@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.app {
+    text-align: center;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cotacao-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+}
+
+.ads-space {
+    background: #f0f0f0;
+    border: 1px dashed #ccc;
+    height: 100px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 100px;
+    color: #999;
+    font-size: 14px;
+  }  
