@@ -34,6 +34,7 @@ const Home = () => {
       {console.log("cotacoes: ", cotacoes)}
       <div className="cards">
         <CotacaoCard
+          cod={cotacoes.USDBRL.code}
           titulo="Dólar"
           nome={cotacoes.USDBRL.name}
           atual={parseFloat(cotacoes.USDBRL.bid)}
@@ -41,6 +42,7 @@ const Home = () => {
           porcentagem={parseFloat(cotacoes.USDBRL.pctChange)}
         />
         <CotacaoCard
+          cod={cotacoes.EURBRL.code}
           titulo="Euro"
           nome={cotacoes.EURBRL.name}
           atual={parseFloat(cotacoes.EURBRL.bid)}
@@ -48,6 +50,7 @@ const Home = () => {
           porcentagem={parseFloat(cotacoes.EURBRL.pctChange)}
         />
         <CotacaoCard
+          cod={cotacoes.GBPBRL.code}
           titulo="Libra"
           nome={cotacoes.GBPBRL.name}
           atual={parseFloat(cotacoes.GBPBRL.bid)}
@@ -55,6 +58,7 @@ const Home = () => {
           porcentagem={parseFloat(cotacoes.GBPBRL.pctChange)}
         />
         <CotacaoCard
+          cod={cotacoes.BTCBRL.code}
           titulo="Bitcoin"
           nome={cotacoes.BTCBRL.name}
           atual={parseFloat(cotacoes.BTCBRL.bid)}

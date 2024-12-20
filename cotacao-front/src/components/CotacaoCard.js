@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './CotacaoCard.css';
 
-const CotacaoCard = ({ titulo, nome, atual, variacao, porcentagem }) => {
+const CotacaoCard = ({ cod, titulo, nome, atual, variacao, porcentagem }) => {
   const isPositive = porcentagem >= 0;
 
   return (
     <div className="cotacao-card">
-      <h2>{titulo}</h2>
+      <h2>{cod} - {titulo}</h2>
       <p className="nome">{nome}</p>
       <p>Cotaçao Atual: <span className="alta">R$ {atual.toFixed(2)}</span></p>
       <p>
@@ -27,10 +27,10 @@ const CotacaoCard = ({ titulo, nome, atual, variacao, porcentagem }) => {
 };
 
 CotacaoCard.propTypes = {
+  code: PropTypes.string.isRequired,
   titulo: PropTypes.string.isRequired,
   nome: PropTypes.string.isRequired,
-  alta: PropTypes.number.isRequired,
-  baixa: PropTypes.number.isRequired,
+  atual: PropTypes.number.isRequired,
   variacao: PropTypes.number.isRequired,
   porcentagem: PropTypes.number.isRequired,
 };
